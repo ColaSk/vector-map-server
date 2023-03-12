@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  vactor_map_server:
+    container_name: vactor_map_server
+    build: .
+    restart: always
+    ports:
+      - "8315:8000"
+    volumes:
+      - ./:/codes
